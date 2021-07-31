@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merienda', cursive;
+    height: 100vh;
+    background-color: hsl(185, 76%, 41%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: top -150px left -50px, bottom -150px right -50px;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ------------ card ------------ */
+
+.card {
+    background-color: hsla(185, 81%, 25%, 0.507);
+    padding: 30px;
+    width: 480px;
+    object-fit: cover;
+    border-radius: 15px;
+    color: hsl(185, 100%, 73%);
+    filter: drop-shadow(10px 10px 4px hsla(185, 100%, 14%, 0.452));
+}
+
+.fa-wifi {
+    position: absolute;
+    width: 480px;
+    right: -70%;
+    bottom: 15%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-size: 500px;
+        background-position: top -150px left -200px, bottom -150px right -200px;
+    }
+}
